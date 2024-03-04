@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Banner Styles */
+.banner {
+    width: 100%;
+    margin: auto;
+    padding: 2.5vh 0;
+    /* Adjusted padding for better proportions */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(180, 170, 156);
+    height: 14vh;
+}
+
+/* Navbar Styles */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 2.5vh 0;
+    /* Adjusted padding for better proportions */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: -3.7vh;
+    /* Adjusted top position */
+}
+
+.logo1 {
+    width: 8rem;
+    /* Adjusted width for better proportions */
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 2vh;
+    /* Adjusted margin for better proportions */
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(8, 6, 27);
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 0.3vh;
+    /* Adjusted height for better proportions */
+    width: 0%;
+    background: #092965;
+    position: absolute;
+    left: 0;
+    bottom: -1vh;
+    /* Adjusted bottom position for better proportions */
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/* Content Styles */
+.content {
+    margin-top: 150px;
+}
+
+.content:hover {
+    transform: scale(1.2);
+    transition-duration: 1.4s;
+}
+
+.content:not(:hover) {
+    transition-duration: 1.4s;
+}
+
+/* Additional Styling for Typography */
+b {
+    position: relative;
+    top: 1vh;
+    /* Adjusted top position for better proportions */
+}
